@@ -1,0 +1,9 @@
+Hi ${PERSON_NAME},
+
+It’s official, your resume has reached our inbox! We are super happy to see you are interested in Coderart__ - it is a great place to work (I may only be an automated response, but I love it here).
+
+We will take a close look at your application and if it looks like you are the right fit, you will hear from us soon.
+
+Best of luck,
+Regards,
+Coderart__
