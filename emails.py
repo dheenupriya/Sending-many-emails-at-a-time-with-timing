@@ -21,12 +21,10 @@ def read_template(filename):
 
 # set up the SMTP server
 s = smtplib.SMTP('smtp.gmail.com:587')
-#s=smtplib.SMTP_SSL(host="smtp.gmail.com",port=465)s.starttls()
 s.ehlo()
 s.starttls()
-s.login('dheenupriya2001@gmail.com','dphysicscomforts')
+s.login('YOUR_GMAIL','PASSWORD')
 
-#s = smtplib.SMTP_SSL('smtp.gmail.com:465')
 names, emails = get_contacts('contacts.txt')  # read contacts
 message_template = read_template('message.txt')
 
@@ -38,7 +36,7 @@ for name, email in zip(names, emails):
     message = message_template.substitute(PERSON_NAME=name.title())
 
     # setup the parameters of the message
-    msg['From']="dheenupriya2001@gmail.com"
+    msg['From']="YOUR_GMAIL"
     msg['To']=email
     msg['Subject']="Coderart__ Application"
 
